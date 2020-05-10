@@ -6,7 +6,7 @@ This peer assessed assignment has two parts. First, you will create a Shiny appl
 ## Your Shiny Application
 - Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
 - Deploy the application on Rstudio's shiny server
-- hare the application link by pasting it into the provided text box
+- Share the application link by pasting it into the provided text box
 - Share your server.R and ui.R code on github
 ## The application must include the following:
 - Some form of input (widget: textbox, radio button, checkbox, ...)
@@ -17,7 +17,11 @@ This peer assessed assignment has two parts. First, you will create a Shiny appl
 
 The Shiny application in question is entirely up to you. However, if you're having trouble coming up with ideas, you could start from the simple prediction algorithm done in class and build a new algorithm on one of the R datasets packages. Please make the package simple for the end user, so that they don't need a lot of your prerequisite knowledge to evaluate your application. You should emphasize a simple project given the short time frame.
 
-# My Project
+# My Project - Covid-19 Analyis for all U.S. States
 
 For my project I use Covid-19 data from New York Times to plot  latest number of cases and deaths and also provide ability to provide forecast data for up to 30 days using two choices of algorithms.
+
+
+
+
 
