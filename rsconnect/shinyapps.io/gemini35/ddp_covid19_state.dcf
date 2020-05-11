@@ -1,0 +1,13 @@
+name: ddp_covid19_state
+title: ddp_covid19_state
+username:
+account: gemini35
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2276746
+bundleId: 3129047
+url: https://gemini35.shinyapps.io/ddp_covid19_state/
+when: 1589148513.08699
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: covid19_state_forecastApp.R|README.md
