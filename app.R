@@ -65,8 +65,17 @@ ui <- fluidPage(theme = shinytheme("lumen"),
                     
                     # Output: Description, lineplot, and reference
                     mainPanel(
-                        plotOutput(outputId = "lineplot", height = "300px"),
-                        plotOutput(outputId = "forecastplot",height = "300px")
+                      tabsetPanel(type="tabs",
+                        tabPanel("Plot",plotOutput(outputId = "lineplot", height = "300px"),
+                        plotOutput(outputId = "forecastplot",height = "300px")),
+                        tabPanel("Documentation", 
+                                 p("The data for this analysis was obtained from New York Times. 
+                                  Please select the options in the side bar to provide the cumlative
+                                   number of cases or deaths from January 21, 2020 to May 02, 2020. The 
+                                   app also gives option to provide forecast numbers for up to 30 days using
+                                   two different models.  The plot displays also the 95 % confidence interval
+                                   bands"))
+                      )
                     )
                 )
 )
@@ -132,6 +141,9 @@ server <- function(input, output) {
          paste("ets: fit the Exponential smoothing state space mode; " ,
         "auto.arima: fit the best ARIMA model to univariate time series.")
     })
+    
+   
+    
 }
 
 # Create Shiny object
